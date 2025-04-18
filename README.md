@@ -1,166 +1,70 @@
+# Getting Started with Create React App
 
-# MERN STORE
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-A full-stack e-commerce project built with Postgres, Express, React and Node.
+## Available Scripts
 
-## Swagger API Documentation
+In the project directory, you can run:
 
-[Documentation](https://pern-store.onrender.com/api/docs/)
+### `npm start`
 
-## Demo
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-[Run demo](https://pern-store.netlify.app)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Screenshots
+### `npm test`
 
-![Homepage Screen Shot](https://user-images.githubusercontent.com/51405947/104136952-a3509100-5399-11eb-94a6-0f9b07fbf1a2.png)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Database Schema
+### `npm run build`
 
-[![ERD](https://user-images.githubusercontent.com/51405947/133893279-8872c475-85ff-47c4-8ade-7d9ef9e5325a.png)](https://dbdiagram.io/d/5fe320fa9a6c525a03bc19db)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Run Locally
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Clone the project
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```bash
-  git clone https://github.com/dhatguy/PERN-Store.git
-```
+### `npm run eject`
 
-Go to the project directory
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-```bash
-  cd PERN-Store
-```
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Install dependencies
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-```bash
-  npm install
-```
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Go to server directory and install dependencies
+## Learn More
 
-```bash
-  npm install
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Go to client directory and install dependencies
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```bash
-  npm install
-```
+### Code Splitting
 
-Go to server directory and start the server
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-```bash
-  npm run dev
-```
+### Analyzing the Bundle Size
 
-Go to client directory and start the client
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-```bash
-  npm run client
-```
+### Making a Progressive Web App
 
-Start both client and server concurrently from the root directory
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-```bash
-  npm run dev
-```
+### Advanced Configuration
 
-## Running with docker
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Make sure you have Docker installed
+### Deployment
 
-### Run the development environment
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-```bash
-docker-compose -f docker-compose.dev.yml up
-```
+### `npm run build` fails to minify
 
-### Run the production environment
-
-```bash
-docker-compose up
-```
-
-Go to http://localhost:3000 to view the app running on your browser.
-
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
-
-Check this article for [guidance](https://dev.to/stlnick/how-to-deploy-a-full-stack-mern-app-with-heroku-netlify-ncb)
-on how to deploy.
-
-## Tech
-
-- [React](https://reactjs.org/)
-- [Node](https://nodejs.org/en/)
-- [Express](http://expressjs.com/)
-- [Postgres](https://www.postgresql.org/)
-- [node-postgres](https://node-postgres.com/)
-- [Windmill React UI](https://windmillui.com/react-ui)
-- [Tailwind-CSS](https://tailwindcss.com/)
-- [react-hot-toast](https://react-hot-toast.com/docs)
-- [react-Spinners](https://www.npmjs.com/package/react-spinners)
-- [react-helmet-async](https://www.npmjs.com/package/react-helmet-async)
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env files in both client and server directory
-
-#### client/.env
-
-`VITE_GOOGLE_CLIENT_ID`
-
-`VITE_GOOGLE_CLIENT_SECRET`
-
-`VITE_API_URL`
-
-`VITE_STRIPE_PUB_KEY`
-
-### server/.env
-
-`POSTGRES_USER`
-
-`POSTGRES_HOST`
-
-`POSTGRES_PASSWORD`
-
-`POSTGRES_DATABASE`
-
-`POSTGRES_DATABASE_TEST`
-
-`POSTGRES_PORT`
-
-`PORT`
-
-`SECRET`
-
-`REFRESH_SECRET`
-
-`SMTP_FROM`
-
-`STRIPE_SECRET_KEY`
-
-## Contributing
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Feedback
-
-Joseph Odunsi - [@odunsi](https://twitter.com/_odunsi_) - odunsiolakunbi@gmail.com
-
-Project Link: [https://github.com/dhatguy/PERN-Store](https://github.com/dhatguy/PERN-Store)
-
-Demo Link: [https://pern-store.netlify.app](https://pern-store.netlify.app)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
